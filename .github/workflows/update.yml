@@ -1,0 +1,33 @@
+name: Update Reads
+
+on:
+  issues:
+    types: [opened, closed, reopened, edited]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: read
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build api.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node index.mjs
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add api.json
+          git diff --cached --quiet || git commit -m "📖 Update reads [skip ci]"
+          git push
