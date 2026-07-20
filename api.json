@@ -1,5 +1,14 @@
 [
   {
+    "id": 2,
+    "title": "Test CLI",
+    "url": "https://example.com",
+    "state": "to-read",
+    "createdAt": "2026-07-20T16:13:06Z",
+    "closedAt": null,
+    "labels": []
+  },
+  {
     "id": 1,
     "title": "Why We Sleep by Matthew Walker - Summary",
     "url": "https://www.gatesnotes.com/Why-We-Sleep",
