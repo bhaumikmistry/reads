@@ -1,5 +1,14 @@
 [
   {
+    "id": 18,
+    "title": "Career advice in the age of AI",
+    "url": "https://x.com/philhchen/status/2072793818945167475?s=12&t=ayTQZTk69farNeI7p4WaDw",
+    "state": "to-read",
+    "createdAt": "2026-08-07T04:03:35Z",
+    "closedAt": null,
+    "labels": []
+  },
+  {
     "id": 17,
     "title": "On building scalable control planes",
     "url": "https://www.allthingsdistributed.com/2026/08/on-building-scalable-control-planes.html",
