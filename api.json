@@ -1,5 +1,14 @@
 [
   {
+    "id": 24,
+    "title": "What you can't say",
+    "url": "https://paulgraham.com/say.html",
+    "state": "to-read",
+    "createdAt": "2026-08-17T15:54:41Z",
+    "closedAt": null,
+    "labels": []
+  },
+  {
     "id": 23,
     "title": "Reality has a surprising amount of detail",
     "url": "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail",
