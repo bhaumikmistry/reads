@@ -1,5 +1,14 @@
 [
   {
+    "id": 30,
+    "title": "Marketing for Engineers by Sam",
+    "url": "https://marketingforengineers.io/",
+    "state": "to-read",
+    "createdAt": "2026-08-26T13:10:34Z",
+    "closedAt": null,
+    "labels": []
+  },
+  {
     "id": 29,
     "title": "The Monorepo Spectrum",
     "url": "https://dherman.dev/notes/the-monorepo-spectrum/",
