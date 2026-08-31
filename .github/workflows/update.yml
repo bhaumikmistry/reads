@@ -7,6 +7,10 @@ on:
     types: [created]
   workflow_dispatch: {}
 
+concurrency:
+  group: update-reads
+  cancel-in-progress: false
+
 permissions:
   contents: write
   issues: write
@@ -32,4 +36,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add api.json
           git diff --cached --quiet || git commit -m "📖 Update reads [skip ci]"
+          git pull --rebase --autostash
           git push
